@@ -13,7 +13,7 @@ public class main {
     public static void main(String[] args) {
         aluno al = new aluno();
         
-        al.inserirMedia();
+        al.inserirDados();
         al.calcularMedia();
     }
 }

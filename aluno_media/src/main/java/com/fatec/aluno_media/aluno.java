@@ -18,7 +18,11 @@ public class aluno {
     double pegarMedia;
     String situacao;
     
-    public void inserirMedia(){
+    public void inserirDados(){
+        nome = (JOptionPane.showInputDialog(
+                "Digite seu nome"
+        ));
+        
         for(i = 0; i < 3; i++){
             media.add(JOptionPane.showInputDialog(
                 "Digite a nota TP"+(i+1)+":" 
@@ -41,7 +45,7 @@ public class aluno {
         } else {
             System.out.println("ERRO");
         }
-        String calculo = "Sua media final e: " + pegarMedia/3 + " \n "+situacao;
+        String calculo = "Ola "+nome+" sua media final e: " + pegarMedia/3 + " \n "+situacao;
         
         JOptionPane.showMessageDialog(
             null, 
